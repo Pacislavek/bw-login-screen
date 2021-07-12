@@ -1,0 +1,118 @@
+<html>
+
+<head>
+
+	<title>Logowanie | System</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Patryk Kowalski | pacislavek@gmail.com">
+	<meta name="description" content="Strona zawiera panel zarządzania klientem.">
+	<meta http-equiv="Cache-control" content="public">
+	<meta name="robots" content="noindex, nofollow" />
+	<meta name="keywords" content="" />
+	<!-- og meta -->
+	<meta property="og:title" content="Panel Zarządzania Klientem" />
+	<meta property="og:url" content="" />
+	<meta property="og:description" content="Strona zawiera panel zarządzania klientem." />
+	<meta property="og:image" content="" />
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<!-- css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+
+
+	<section class="login-theme dark-theme">
+		<div class="container-fluid">
+			<div class="row d-flex align-items-center justify-content-center h-100 position-relative">
+
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-10 col-xs-12">
+					<div class="login-wrapper pb-5">
+						<div class="npro-logo">
+							<img src="img/nprofit_logo-white.png" alt="" class="img-fluid login-logo pb-1 pt-5">
+						</div>
+						<h1 class="h3 thin mt-4">Logowanie:</h1>
+						<div class="w-100"></div>
+
+						<form action="" class="needs-validation d-flex flex-column w-75" autocomplete="off" method="post" novalidate>
+
+							<div class="my-3 color-label position-relative">
+								<input type="text" class="form-custom" id="login" name="username" aria-describedby="loginHelp" value="" required>
+								<label for="login" class="form-label">Login:</label>
+								<div class="invalid-feedback">
+									Pole z loginem nie może być puste.
+								</div>
+							</div>
+
+							<div class="mb-3 color-label position-relative">
+								<input type="password" class="form-custom" name="password" value="" id="pass" required>
+								<label for="pass" class="form-label">Hasło:</label>
+								<div class="invalid-feedback">
+									Pole z hasłem nie może być puste.
+								</div>
+							</div>
+
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input me-2" id="rememberMe" name="rememberMe">
+								<label class="form-check-label" for="rememberMe">Zapamiętaj mnie</label>
+							</div>
+							<button type="submit" name="login" class="login-button mt-4" disabled>Zaloguj</button>
+
+						</form>
+
+						<div class="invalid-tooltip d-block w-100">
+							<p class="mb-0 text-white text-center">Dane logowania są niepoprawne.</p>
+						</div>
+
+						<div class="valid-tooltip d-block w-100">
+							<p class="mb-0 text-white text-center">Zalogowano.</p>
+						</div>
+
+
+						<div class="invalid-tooltip d-block w-100">
+							<p class="mb-0 text-white text-center">Nie można uzyskać połączenia z bazą danych.</p>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<script src="js/validation.js"></script>
+</body>
+
+</html>
